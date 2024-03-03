@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/index.html"],
@@ -38,5 +40,21 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animated")],
+  plugins: [
+    plugin(({ addUtilities, theme }) => {
+      const timingFunction = theme("transitionTimingFunction.in-out");
+
+      addUtilities({
+        ".fade-up": {
+          transition: `transform 0.35s ${timingFunction}, opacity 0.35s ${timingFunction}`,
+          opacity: theme("opacity.0"),
+          transform: "translateY(2rem)",
+        },
+        ".faded": {
+          opacity: theme("opacity.100"),
+          transform: "translateY(0)",
+        },
+      });
+    }),
+  ],
 };
