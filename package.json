@@ -6,7 +6,7 @@
     "build": "npx tailwindcss -i ./src/input.css -o public/output.css",
     "watch": "npx tailwindcss -i ./src/input.css -o public/output.css --watch",
     "format": "prettier --write --ignore-unknown public/*.html src/input.css tailwind.config.js",
-    "prepare": "husky"
+    "prepare": "npx husky"
   },
   "keywords": [],
   "author": "",
