@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>lmhk</title>
     <link href="output.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg" />
   </head>
   <body class="bg-black-100 text-white-100">
     <div
@@ -140,9 +141,7 @@
               >
                 UX/UI Designer
               </h2>
-              <span class="text-base text-white-80 laptop:text-xl"
-                >Last update • 2024</span
-              >
+              <span class="text-base text-white-60">Last update • 2024</span>
             </div>
           </div>
         </div>
@@ -565,8 +564,15 @@
       >
         <div class="laptop:text-xl">Need something special?</div>
         <div class="text-sm laptop:text-base">
-          Let's turn your vision into reality.
-          <span class="text-yellow-40">Just text me!</span>
+          <span class="text-white-60"
+            >Let's turn your vision into reality.</span
+          >
+          <a
+            class="text-yellow-40"
+            href="https://www.linkedin.com/in/lumenhuk/"
+            target="_blank"
+            >Just text me!</a
+          >
         </div>
       </div>
     </section>
@@ -586,15 +592,17 @@
         </div>
       </div>
       <div
-        class="scrollbar-hide flex snap-x snap-mandatory gap-8 overflow-y-auto px-4 fade-up tabletV:px-8 laptop:px-[82px] desktop:px-[106px]"
+        class="scrollbar-hide relative flex snap-x snap-mandatory gap-8 overflow-y-auto px-4 fade-up tabletV:px-8 laptop:px-[82px] desktop:px-[106px]"
+        data-carousel="container"
       >
         <figure
           class="mt-8 shrink-0 grow-0 basis-full snap-center overflow-hidden rounded-[24px] bg-black-80 laptop:mt-12 laptop:rounded-[48px]"
+          data-carousel="item"
         >
           <div
             class="no-select w-full bg-yellow-40 px-6 py-4 font-semibold text-black-100 tabletV:px-8 tabletV:py-5 laptop:px-12 laptop:py-6 laptop:text-xl"
           >
-            Project Category
+            UX Audit
           </div>
           <div
             class="background-image-overlay relative h-[408px] w-full bg-[url('./assets/images/project.webp')] bg-cover bg-center tabletV:h-[417px] tabletH:h-[537px] laptop:h-[560px] desktop:h-[703px]"
@@ -602,18 +610,19 @@
             <div
               class="absolute bottom-6 left-6 gap-1 tabletV:bottom-8 tabletV:right-8 laptop:bottom-12 laptop:left-12 laptop:gap-2"
             >
-              <div class="text-base laptop:text-xl">Month Year</div>
-              <div class="text-xl laptop:text-3xl">Project Title</div>
+              <div class="text-base">March 2024</div>
+              <div class="text-xl laptop:text-3xl">FastServe App</div>
             </div>
           </div>
         </figure>
         <figure
           class="mt-8 shrink-0 grow-0 basis-full snap-center overflow-hidden rounded-[24px] bg-black-80 laptop:mt-12 laptop:rounded-[48px]"
+          data-carousel="item"
         >
           <div
             class="no-select w-full bg-yellow-40 px-6 py-4 font-semibold text-black-100 tabletV:px-8 tabletV:py-5 laptop:px-12 laptop:py-6 laptop:text-xl"
           >
-            Project Category
+            UX/UI Design
           </div>
           <div
             class="background-image-overlay relative h-[408px] w-full bg-[url('./assets/images/project.webp')] bg-cover bg-center tabletV:h-[417px] tabletH:h-[537px] laptop:h-[560px] desktop:h-[703px]"
@@ -621,12 +630,47 @@
             <div
               class="absolute bottom-6 left-6 gap-1 tabletV:bottom-8 tabletV:right-8 laptop:bottom-12 laptop:left-12 laptop:gap-2"
             >
-              <div class="text-base laptop:text-xl">Month Year</div>
-              <div class="text-xl laptop:text-3xl">Project Title</div>
+              <div class="text-base">March 2024</div>
+              <div class="text-xl laptop:text-3xl">Project Rentify</div>
             </div>
           </div>
         </figure>
       </div>
+      <div class="hidden laptop:block absolute w-full"><div class="absolute bottom-4 right-[50%] flex gap-3">
+        <button
+          data-carousel="previous"
+          class="text-white-80 hover:text-yellow-40 active:text-yellow-120 ease-in-out duration-150 opacity-70 size-11 rounded-full bg-black-20 flex justify-center items-center hover:bg-yellow-100 active:bg-yellow-80">
+          <svg
+            width="13"
+            height="22"
+            viewBox="0 0 13 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.666763 11.0678C0.66591 11.2484 0.701148 11.4275 0.770409 11.5943C0.839669 11.7612 0.941559 11.9125 1.0701 12.0395L10.2368 21.2061C10.5042 21.3889 10.8277 21.4715 11.1501 21.4391C11.4724 21.4067 11.773 21.2615 11.9988 21.0292C12.2246 20.7968 12.3611 20.4922 12.3842 20.169C12.4073 19.8459 12.3155 19.5249 12.1251 19.2628L3.9851 11.0678L12.1251 2.87279C12.2926 2.61436 12.3686 2.30717 12.3407 2.00045C12.3129 1.69372 12.1829 1.40523 11.9715 1.18121C11.7602 0.957179 11.4798 0.810594 11.1752 0.764946C10.8706 0.719297 10.5595 0.777225 10.2918 0.929449L1.1251 10.0961C0.986569 10.2183 0.874463 10.3676 0.79565 10.5346C0.716837 10.7017 0.672979 10.8832 0.666763 11.0678Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <button
+          data-carousel="next"
+          class="text-white-80 hover:text-yellow-40 active:text-yellow-120 ease-in-out duration-150 opacity-70 size-11 rounded-full bg-black-20 flex justify-center items-center hover:bg-yellow-100 active:bg-yellow-80">
+          <svg
+            width="13"
+            height="22"
+            viewBox="0 0 13 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5266 11.0678C12.5274 11.2484 12.4922 11.4275 12.4229 11.5943C12.3537 11.7612 12.2518 11.9125 12.1232 12.0395L2.95658 21.2061C2.6891 21.3889 2.36565 21.4715 2.04328 21.4391C1.72091 21.4067 1.42032 21.2615 1.19454 21.0292C0.968754 20.7968 0.832272 20.4922 0.809167 20.169C0.786061 19.8459 0.877816 19.5249 1.06825 19.2628L9.20825 11.0678L1.06825 2.87279C0.900697 2.61436 0.824759 2.30717 0.852602 2.00045C0.880446 1.69372 1.01046 1.40523 1.22181 1.18121C1.43315 0.957179 1.71359 0.810594 2.01817 0.764946C2.32275 0.719297 2.63385 0.777225 2.90158 0.929449L12.0682 10.0961C12.2068 10.2183 12.3189 10.3676 12.3977 10.5346C12.4765 10.7017 12.5204 10.8832 12.5266 11.0678Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div></div>
+
     </section>
     <!--    Contact Form    -->
     <section
@@ -797,7 +841,7 @@
           </li>
           <li>
             <a
-              href="https://outgoing-comic-0c7.notion.site/Hello-World-12fff7d67c764672a6fc539efbc38459?pvs=74"
+              href="https://lumenhuk.notion.site/Lumenhuk-Portfolio-12fff7d67c764672a6fc539efbc38459"
               target="_blank"
               class="flex size-14 items-center justify-center rounded-full bg-yellow-120 outline-none duration-300 ease-in-out hover:bg-yellow-100 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:bg-yellow-80"
             >
@@ -940,7 +984,7 @@
     <div
       role="presentation"
       aria-hidden="true"
-      class="ease-in-out fixed inset-0 z-10 flex -translate-x-full flex-col bg-yellow-40 px-4 py-4 text-black-100 transition-transform duration-200 tabletV:px-8 tabletV:py-5 tabletH:px-12 tabletH:py-6"
+      class="fixed inset-0 z-10 flex -translate-x-full flex-col bg-yellow-40 px-4 py-4 text-black-100 transition-transform duration-200 ease-in-out tabletV:px-8 tabletV:py-5 tabletH:px-12 tabletH:py-6"
       data-navigation-menu="overlay"
     >
       <div class="absolute bottom-0 right-0 -z-10">
@@ -1084,7 +1128,7 @@
             </li>
             <li>
               <a
-                href="https://outgoing-comic-0c7.notion.site/Hello-World-12fff7d67c764672a6fc539efbc38459?pvs=74"
+                href="https://lumenhuk.notion.site/Lumenhuk-Portfolio-12fff7d67c764672a6fc539efbc38459"
                 target="_blank"
                 class="flex size-14 items-center justify-center rounded-full bg-yellow-80 outline-none duration-300 ease-in-out hover:opacity-90 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:opacity-80"
               >
@@ -1189,6 +1233,7 @@
       initNavigation();
       initNavigationMenu();
       initForm();
+      initCarousel();
 
       function initNavigation() {
         const links = document.querySelectorAll("[data-link]");
@@ -1378,6 +1423,36 @@
         document.querySelectorAll(".fade-up").forEach((element) => {
           fadeUpObserver.observe(element);
         });
+      }
+
+      function initCarousel() {
+        const container = document.querySelector("[data-carousel='container']");
+        const previousButton = document.querySelector("[data-carousel='previous']");
+        const nextButton = document.querySelector("[data-carousel='next']");
+
+        previousButton.addEventListener("click", function scrollToPreviousItem() {
+          console.log("previousButton");
+          const itemWidth = document.querySelector("[data-carousel='item']").clientWidth;
+
+          const previousItemScrollPosition = container.scrollLeft - itemWidth;
+
+          container.scroll({
+            left: previousItemScrollPosition,
+            behavior: 'smooth'
+          });
+        })
+
+        nextButton.addEventListener("click", function scrollToNextItem() {
+          console.log("nextButton");
+          const itemWidth = document.querySelector("[data-carousel='item']").clientWidth;
+
+          const nextItemScrollPosition = container.scrollLeft + itemWidth;
+
+          container.scroll({
+            left: nextItemScrollPosition,
+            behavior: 'smooth'
+          });
+        })
       }
     </script>
   </body>
