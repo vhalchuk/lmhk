@@ -5,14 +5,20 @@
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o public/output.css",
     "watch": "npx tailwindcss -i ./src/input.css -o public/output.css --watch",
-    "format": "prettier --write --ignore-unknown public/*.html src/input.css tailwind.config.js"
+    "format": "prettier --write --ignore-unknown public/*.html src/input.css tailwind.config.js",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,md,html,json}": "prettier --write"
   }
 }
