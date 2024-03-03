@@ -1,0 +1,1356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>lmhk</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black-100 text-white-100">
+    <div
+      class="bg-hero overflow-hidden rounded-b-[64px] border-b-[0.33px] border-b-black-80 bg-right-bottom"
+    >
+      <div
+        class="fixed left-0 right-0 top-0 z-10 mx-auto w-full max-w-[1920px]"
+      >
+        <!--    Header    -->
+        <header
+          class="px-4 pt-4 tabletV:px-8 tabletV:pt-5 tabletH:px-12 tabletH:pt-6 laptop:px-20 desktop:px-[106px]"
+        >
+          <div
+            class="flex items-center justify-between rounded-[100px] bg-header px-4 py-3 backdrop-blur-lg backdrop-saturate-150 tabletV:px-6 tabletH:px-8"
+          >
+            <div class="laptop:w-[160px]">
+              <svg
+                width="45"
+                height="16"
+                viewBox="0 0 45 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 14.9922V0.900391H2.10938V14.9922H0Z" fill="white" />
+                <path
+                  d="M4.27734 14.9922V4.71875H6.28906V6.44727H6.33789C6.79688 5.30469 7.87109 4.54297 9.25781 4.54297C10.6836 4.54297 11.7188 5.27539 12.1289 6.55469H12.1777C12.7051 5.30469 13.916 4.54297 15.3809 4.54297C17.4121 4.54297 18.7402 5.89062 18.7402 7.93164V14.9922H16.6211V8.43945C16.6211 7.11133 15.9082 6.34961 14.6582 6.34961C13.4082 6.34961 12.5391 7.27734 12.5391 8.57617V14.9922H10.4688V8.2832C10.4688 7.10156 9.7168 6.34961 8.52539 6.34961C7.27539 6.34961 6.38672 7.32617 6.38672 8.64453V14.9922H4.27734Z"
+                  fill="white"
+                />
+                <path
+                  d="M20.8594 14.9922V0.900391H22.9492V6.4375H22.998C23.5645 5.23633 24.6875 4.54297 26.25 4.54297C28.5059 4.54297 29.8535 6.04688 29.8535 8.37109V14.9922H27.7344V8.78125C27.7344 7.26758 26.9727 6.35938 25.4883 6.35938C23.9258 6.35938 22.9688 7.43359 22.9688 9.05469V14.9922H20.8594Z"
+                  fill="white"
+                />
+                <path
+                  d="M34.1016 9.12305L38.252 4.71875H40.7324L36.4746 9.14258L40.8984 14.9922H38.4473L34.9609 10.4316L34.082 11.3008V14.9922H31.9727V0.900391H34.082V9.12305H34.1016Z"
+                  fill="white"
+                />
+                <path
+                  d="M43.5742 15.0996C42.8613 15.0996 42.2949 14.5332 42.2949 13.8203C42.2949 13.1074 42.8613 12.541 43.5742 12.541C44.2871 12.541 44.8535 13.1074 44.8535 13.8203C44.8535 14.5332 44.2871 15.0996 43.5742 15.0996Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <nav class="hidden laptop:block">
+              <ul class="flex gap-6 text-lg">
+                <li>
+                  <a
+                    href="#home"
+                    class="text-nowrap rounded-[24px] px-4 py-2 text-center text-lg outline-none focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60"
+                    data-link="home"
+                    data-anchor-state="home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about-me"
+                    class="text-nowrap rounded-[24px] px-4 py-2 text-center text-lg outline-none focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60"
+                    data-link="about-me"
+                    data-anchor-state="about-me"
+                    >About Me</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="text-nowrap rounded-[24px] px-4 py-2 text-center text-lg outline-none focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60"
+                    data-link="services"
+                    data-anchor-state="services"
+                    >My Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="text-nowrap rounded-[24px] px-4 py-2 text-center text-lg outline-none focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60"
+                    data-link="portfolio"
+                    data-anchor-state="portfolio"
+                    >Portfolio</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="flex gap-6">
+              <button
+                class="hidden rounded-[24px] bg-yellow-40 px-6 py-3 font-medium leading-5 text-black-100 outline-none duration-300 ease-in-out focus-within:bg-yellow-60 hover:bg-yellow-60 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:bg-yellow-80 tabletV:block"
+                data-link="contact-form"
+              >
+                Contact Me!
+              </button>
+              <button class="laptop:hidden" data-navigation-menu="open">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 12H20M4 6H20M4 18H20"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
+      <!--    Hero    -->
+      <section
+        class="mx-auto mt-16 flex max-w-[1920px] flex-col gap-10 pt-8 tabletV:mt-[88px] tabletV:flex-row tabletV:justify-between tabletV:gap-0 tabletV:pt-10 tabletH:mt-[92px] laptop:pt-16"
+        data-anchor="home"
+      >
+        <div
+          class="flex w-full shrink-0 grow-0 basis-1/2 flex-col justify-center pl-4 pr-4 tabletV:pl-8 tabletV:pr-0 tabletH:pl-12 laptop:pl-20 desktop:pl-[106px]"
+        >
+          <div
+            class="flex flex-col gap-10 tabletV:gap-[86px] tabletH:gap-[121px] laptop:gap-[163px] desktop:gap-[231px]"
+          >
+            <h1
+              class="text-[56px] font-semibold leading-tight text-white-100 laptop:text-[100px]"
+            >
+              Hi!
+              <span class="emoji-shadow inline-block scale-x-[-1]">👋</span>
+              <br />
+              I'm <span class="text-yellow-40">Vladyslav</span>
+            </h1>
+            <div class="flex flex-col gap-2">
+              <h2
+                class="text-3xl text-[32px] font-medium text-white-100 laptop:text-5xl"
+              >
+                UX/UI Designer
+              </h2>
+              <span class="text-base text-white-80 laptop:text-xl"
+                >Last update • 2024</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="with-bg-pos-shift flex w-full shrink-0 grow-0 basis-1/2 bg-[url('./assets/images/bg-circles.svg')] bg-contain bg-right bg-no-repeat pl-6 pr-6 pt-4 tabletV:pl-2 tabletV:pr-12 tabletV:pt-0 tabletH:pl-[49px] tabletH:pr-[89px] laptop:pl-[42px] laptop:pr-[106px] desktop:pl-[85px] desktop:pr-[163px]"
+        >
+          <img
+            src="./assets/images/portrait-384w.webp"
+            srcset="
+              ./assets/images/portrait-384w.webp   384w,
+              ./assets/images/portrait-512w.webp   512w,
+              ./assets/images/portrait-768w.webp   768w,
+              ./assets/images/portrait-1152w.webp 1152w,
+              ./assets/images/portrait-1536w.webp 1536w,
+              ./assets/images/portrait-1920w.webp 1920w
+            "
+            sizes="(max-width: 768px) 100vw, 50vw"
+            alt="Portrait"
+            class="w-full object-cover"
+            loading="eager"
+          />
+        </div>
+      </section>
+    </div>
+    <!--    About me    -->
+    <section
+      class="mx-auto flex max-w-[1920px] flex-col gap-5 px-4 py-12 tabletV:flex-row tabletV:px-8 tabletV:py-16 tabletH:px-12 tabletH:py-16 laptop:px-[82px] laptop:py-[100px] desktop:px-[106px] desktop:py-[100px]"
+      data-animated="fade-up"
+      data-anchor="about-me"
+    >
+      <div
+        class="flex flex-col gap-3 tabletV:shrink-0 tabletV:grow-0 tabletV:basis-1/2"
+      >
+        <div
+          class="w-fit rounded-full bg-black-80 px-4 py-2 text-sm font-medium laptop:px-5 laptop:py-3 laptop:text-base"
+        >
+          About me
+        </div>
+        <div class="text-3xl laptop:text-5xl">
+          <div>Let me</div>
+          <div class="text-yellow-40">introduce myself</div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col gap-4 tabletV:shrink-0 tabletV:grow-0 tabletV:basis-1/2 laptop:gap-6"
+      >
+        <div class="text-xl laptop:text-3xl">
+          I'm currently a member of the design team at
+          <span class="text-yellow-40">Revend</span>, contributing to the
+          development of digital experiences and solutions for prominent brands.
+        </div>
+        <div class="text-base text-white-60 laptop:text-xl">
+          Rooted in a user-centric design ethos, I immerse myself in the
+          intricacies of crafting interfaces that not only meet but exceed user
+          expectations.
+        </div>
+      </div>
+    </section>
+    <!--    My services    -->
+    <section
+      class="mx-auto grid max-w-[1920px] grid-cols-1 rounded-3xl bg-black-80 py-12 tabletV:grid-cols-2 tabletV:px-8 tabletV:py-0 tabletH:px-12 laptop:px-[82px] desktop:px-[106px]"
+      data-anchor="services"
+    >
+      <div
+        class="px-4 tabletV:col-span-1 tabletV:col-start-1 tabletV:px-0 tabletV:pt-12 tabletH:pt-16 laptop:pt-[100px]"
+        data-animated="fade-up"
+      >
+        <div
+          class="w-fit rounded-full bg-black-60 px-4 py-2 text-sm font-medium laptop:px-5 laptop:py-3 laptop:text-base"
+        >
+          My Services
+        </div>
+        <div class="mt-3 text-3xl font-medium laptop:text-5xl">
+          Ways I can
+          <span class="text-yellow-40">help you</span>
+        </div>
+        <div class="mt-5 text-xl laptop:mt-6 laptop:text-3xl">
+          I specialize in enhancing UX, offering personalized consultations, and
+          crafting captivating UI designs for an excellent user experience.
+        </div>
+        <button
+          class="mt-8 w-full rounded-[24px] bg-yellow-40 px-6 py-3 font-medium leading-5 text-black-100 outline-none duration-300 ease-in-out hover:bg-yellow-60 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:bg-yellow-80 tabletV:w-auto"
+          data-link="contact-form"
+        >
+          Contact Me!
+        </button>
+      </div>
+      <div
+        class="flex flex-col gap-6 py-12 tabletV:col-start-2 tabletV:row-start-1 tabletV:row-end-3 tabletV:flex-row tabletV:justify-center tabletV:gap-7 tabletV:py-0 tabletH:gap-12 laptop:gap-[75px]"
+        data-animated="fade-up"
+      >
+        <div
+          class="scrollbar-hide grid grid-flow-col grid-rows-2 gap-4 overflow-x-scroll px-4 tabletV:flex tabletV:max-h-[517px] tabletV:flex-col tabletV:overflow-x-visible tabletV:overflow-y-scroll tabletV:px-2 tabletV:py-4 tabletH:max-h-[532px] laptop:max-h-[800px]"
+        >
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">Visual Design</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">User Experience</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">Product Design</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">UI Design</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">Brand Identity</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">Interaction Design</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">Web Design</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">App Design</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">Design System</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">Creative Direction</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+          <button
+            class="relative flex h-[106px] w-[264px] shrink-0 grow-0 items-center justify-center rounded-[20px] border-[1.5px] border-black-40 outline-none duration-300 ease-in-out hover:border-yellow-40 hover:text-yellow-40 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:border-yellow-80 active:text-yellow-80 laptop:h-[164px] laptop:w-[412px]"
+            data-link="contact-form"
+          >
+            <span class="font-medium">Prototyping</span>
+            <span class="block absolute right-[23px] top-[23px]">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H11V11M1 11L10 2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="flex items-center justify-center gap-6 tabletV:flex-col">
+          <!--    Arrow Left      -->
+          <svg
+            width="14"
+            height="12"
+            viewBox="0 0 14 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="tabletV:hidden"
+          >
+            <path
+              d="M6 1L1 6L6 11M13 1L8 6L13 11"
+              stroke="#666666"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!--    Arrow Up      -->
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="hidden tabletV:block"
+          >
+            <path
+              d="M17.5 18L12.5 13L7.5 18M17.5 11L12.5 6L7.5 11"
+              stroke="#666666"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="text-black-20"> Scroll </span>
+          <!--    Arrow Right      -->
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="tabletV:hidden"
+          >
+            <path
+              d="M13 17L18 12L13 7M6 17L11 12L6 7"
+              stroke="#666666"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <!--    Arrow Down      -->
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="hidden tabletV:block"
+          >
+            <path
+              d="M7.5 13L12.5 18L17.5 13M7.5 6L12.5 11L17.5 6"
+              stroke="#666666"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="flex flex-col gap-1 px-4 tabletV:col-start-1 tabletV:mt-20 tabletV:px-0 tabletV:pb-12 tabletH:mt-[97px] tabletH:pb-16 laptop:mt-[145px] laptop:pb-[100px] desktop:mt-[193px]"
+        data-animated="fade-up"
+      >
+        <div class="laptop:text-xl">Need something special?</div>
+        <div class="text-sm laptop:text-base">
+          Let's turn your vision into reality.
+          <span class="text-yellow-40">Just text me!</span>
+        </div>
+      </div>
+    </section>
+    <!--    Portfolio    -->
+    <section
+      class="mx-auto max-w-[1920px] py-12 tabletV:py-16 tabletH:px-12 tabletH:py-16 laptop:py-[100px] desktop:py-[100px]"
+      data-anchor="portfolio"
+    >
+      <div class="flex flex-col items-center">
+        <div
+          class="w-fit rounded-full bg-black-80 px-4 py-2 text-sm font-medium laptop:px-5 laptop:py-3 laptop:text-base"
+          data-animated="fade-up"
+        >
+          Portfolio
+        </div>
+        <div
+          class="mt-3 text-3xl font-medium laptop:text-5xl"
+          data-animated="fade-up"
+        >
+          My recent <span class="text-yellow-40">work</span>
+        </div>
+      </div>
+      <div
+        class="scrollbar-hide flex snap-x snap-mandatory gap-8 overflow-y-auto px-4 tabletV:px-8 laptop:px-[82px] desktop:px-[106px]"
+        data-animated="fade-up"
+      >
+        <figure
+          class="mt-8 shrink-0 grow-0 basis-full snap-center overflow-hidden rounded-[24px] bg-black-80 laptop:mt-12 laptop:rounded-[48px]"
+        >
+          <div
+            class="no-select w-full bg-yellow-40 px-6 py-4 font-semibold text-black-100 tabletV:px-8 tabletV:py-5 laptop:px-12 laptop:py-6 laptop:text-xl"
+          >
+            Project Category
+          </div>
+          <div
+            class="background-image-overlay relative h-[408px] w-full bg-[url('./assets/images/project.webp')] bg-cover bg-center tabletV:h-[417px] tabletH:h-[537px] laptop:h-[560px] desktop:h-[703px]"
+          >
+            <div
+              class="absolute bottom-6 left-6 gap-1 tabletV:bottom-8 tabletV:right-8 laptop:bottom-12 laptop:left-12 laptop:gap-2"
+            >
+              <div class="text-base laptop:text-xl">Month Year</div>
+              <div class="text-xl laptop:text-3xl">Project Title</div>
+            </div>
+          </div>
+        </figure>
+        <figure
+          class="mt-8 shrink-0 grow-0 basis-full snap-center overflow-hidden rounded-[24px] bg-black-80 laptop:mt-12 laptop:rounded-[48px]"
+        >
+          <div
+            class="no-select w-full bg-yellow-40 px-6 py-4 font-semibold text-black-100 tabletV:px-8 tabletV:py-5 laptop:px-12 laptop:py-6 laptop:text-xl"
+          >
+            Project Category
+          </div>
+          <div
+            class="background-image-overlay relative h-[408px] w-full bg-[url('./assets/images/project.webp')] bg-cover bg-center tabletV:h-[417px] tabletH:h-[537px] laptop:h-[560px] desktop:h-[703px]"
+          >
+            <div
+              class="absolute bottom-6 left-6 gap-1 tabletV:bottom-8 tabletV:right-8 laptop:bottom-12 laptop:left-12 laptop:gap-2"
+            >
+              <div class="text-base laptop:text-xl">Month Year</div>
+              <div class="text-xl laptop:text-3xl">Project Title</div>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+    <!--    Contact Form    -->
+    <section
+      class="mx-auto flex max-w-[1920px] gap-5 px-4 py-12 tabletV:px-8 tabletV:py-16 tabletH:px-12 tabletH:py-16 laptop:px-[82px] laptop:py-[100px] desktop:px-[106px] desktop:py-[100px]"
+      data-anchor="contact-form"
+    >
+      <div
+        class="flex-grow-1 bg-small-hero relative hidden flex-shrink-0 items-end justify-center overflow-hidden rounded-3xl bg-black-80 tabletH:flex tabletH:basis-2/5 laptop:rounded-[40px] desktop:basis-1/2"
+        data-animated="fade-up"
+      >
+        <svg
+          width="138"
+          height="128"
+          viewBox="0 0 138 128"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute left-0 top-0"
+        >
+          <g clip-path="url(#clip0_195_4291)">
+            <path
+              d="M138 19C138 79.199 89.199 128 29 128C-31.199 128 -80 79.199 -80 19C-80 -41.199 -31.199 -90 29 -90C89.199 -90 138 -41.199 138 19ZM-51.8538 19C-51.8538 63.6543 -15.6543 99.8538 29 99.8538C73.6543 99.8538 109.854 63.6543 109.854 19C109.854 -25.6543 73.6543 -61.8538 29 -61.8538C-15.6543 -61.8538 -51.8538 -25.6543 -51.8538 19Z"
+              fill="#5C651C"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_195_4291">
+              <rect
+                width="218"
+                height="218"
+                fill="white"
+                transform="translate(-80 -90)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+        <svg
+          width="844"
+          height="348"
+          viewBox="0 0 844 348"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="x-0 absolute bottom-0"
+        >
+          <g clip-path="url(#clip0_195_4290)">
+            <circle cx="422" cy="1581" r="1581" fill="#DDFE07" />
+          </g>
+          <defs>
+            <clipPath id="clip0_195_4290">
+              <rect width="844" height="348" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+
+        <img
+          src="./assets/images/portrait-384w.webp"
+          srcset="
+            ./assets/images/portrait-384w.webp   384w,
+            ./assets/images/portrait-512w.webp   512w,
+            ./assets/images/portrait-768w.webp   768w,
+            ./assets/images/portrait-1152w.webp 1152w,
+            ./assets/images/portrait-1536w.webp 1536w,
+            ./assets/images/portrait-1920w.webp 1920w
+          "
+          sizes="50vw"
+          alt="Portrait"
+          class="relative min-h-[474px] w-full max-w-[640px] object-cover"
+          loading="lazy"
+        />
+      </div>
+      <form
+        class="flex-grow-1 flex-shrink-0 basis-full rounded-3xl bg-black-80 p-6 tabletH:basis-3/5 tabletH:p-8 laptop:rounded-[40px] laptop:p-10 desktop:basis-1/2"
+        data-animated="fade-up"
+      >
+        <div
+          class="w-fit rounded-full bg-black-60 px-4 py-2 text-sm font-medium laptop:px-5 laptop:py-3 laptop:text-base"
+        >
+          Contact me
+        </div>
+        <div class="mt-3 text-3xl font-medium laptop:text-5xl">
+          Get in <span class="text-yellow-40">touch</span>
+        </div>
+        <div class="mt-4 text-white-60">
+          Fill out the form below, and I'll get back to you promptly.
+        </div>
+        <fieldset
+          class="mt-8 grid grid-flow-row gap-y-6 laptop:mt-10 laptop:grid-cols-2 laptop:gap-x-6 laptop:gap-y-10"
+        >
+          <div
+            class="relative rounded-3xl border-[1px] border-black-40 focus-within:!border-[#a555a8] hover:border-white-60"
+          >
+            <label
+              class="absolute -top-2 left-4 inline-block bg-black-80 px-2 text-xs"
+              for="full-name"
+              >Full name</label
+            >
+            <input
+              type="text"
+              id="full-name"
+              name="fullName"
+              class="bg-transparent w-full p-4 text-white-100 focus:outline-none"
+            />
+          </div>
+          <div
+            class="relative rounded-3xl border-[1px] border-black-40 focus-within:!border-[#a555a8] hover:border-white-60"
+          >
+            <label
+              class="absolute -top-2 left-4 inline-block bg-black-80 px-2 text-xs"
+              for="email"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="bg-transparent w-full p-4 text-white-100 focus:outline-none"
+              required
+            />
+          </div>
+          <div
+            class="relative rounded-3xl border-[1px] border-black-40 focus-within:!border-[#a555a8] hover:border-white-60 laptop:col-span-2"
+          >
+            <label
+              class="absolute -top-2 left-4 inline-block bg-black-80 px-2 text-xs"
+              for="message"
+              >Message</label
+            >
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              class="bg-transparent w-full p-4 text-white-100 focus:outline-none"
+              rows="5"
+            ></textarea>
+          </div>
+        </fieldset>
+        <hr class="mt-8 border-black-40 laptop:mt-10" />
+        <button
+          type="submit"
+          class="mt-8 w-full rounded-[24px] bg-yellow-40 px-6 py-3 font-medium leading-5 text-black-100 outline-none duration-300 ease-in-out hover:bg-yellow-60 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:bg-yellow-80 laptop:mt-10"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+    <!--    Footer    -->
+    <footer
+      class="mx-auto flex max-w-[1920px] flex-col gap-10 px-4 pb-6 pt-[96px] tabletV:gap-[56px] tabletV:px-8 tabletV:pt-[128px] tabletH:px-12 laptop:gap-[64px] laptop:px-[82px] laptop:pt-[200px] desktop:px-[106px]"
+    >
+      <nav data-animated="fade-up">
+        <ul class="flex justify-center gap-5">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lumenhuk/"
+              target="_blank"
+              class="flex size-14 items-center justify-center rounded-full bg-yellow-120 outline-none duration-300 ease-in-out hover:bg-yellow-100 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:bg-yellow-80"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.25326 6.66702C9.2529 7.37427 8.97161 8.0524 8.47126 8.55225C7.97092 9.0521 7.2925 9.33271 6.58526 9.33236C5.87801 9.332 5.19987 9.05071 4.70003 8.55037C4.20018 8.05002 3.91957 7.3716 3.91992 6.66436C3.92028 5.95711 4.20157 5.27898 4.70191 4.77913C5.20226 4.27928 5.88068 3.99867 6.58792 3.99902C7.29517 3.99938 7.9733 4.28067 8.47315 4.78102C8.973 5.28136 9.25361 5.95978 9.25326 6.66702ZM9.33326 11.307H3.99992V28.0004H9.33326V11.307ZM17.7599 11.307H12.4533V28.0004H17.7066V19.2404C17.7066 14.3604 24.0666 13.907 24.0666 19.2404V28.0004H29.3333V17.427C29.3333 9.20036 19.9199 9.50702 17.7066 13.547L17.7599 11.307Z" fill="#DDFE07"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://outgoing-comic-0c7.notion.site/Hello-World-12fff7d67c764672a6fc539efbc38459?pvs=74"
+              target="_blank"
+              class="flex size-14 items-center justify-center rounded-full bg-yellow-120 outline-none duration-300 ease-in-out hover:bg-yellow-100 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:bg-yellow-80"
+            >
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_275_669)">
+                  <path d="M21.7138 3.94036C21.2381 3.62333 20.6686 3.47757 20.0991 3.52703L5.35244 4.80836C5.02363 4.83706 4.71755 4.98802 4.49463 5.23142C4.27172 5.47482 4.14819 5.79297 4.14844 6.12303V21.5564C4.14844 22.1004 4.32577 22.631 4.65244 23.067L8.34177 27.987C8.47505 28.1642 8.65083 28.305 8.85286 28.3963C9.0549 28.4877 9.27669 28.5267 9.49777 28.5097L26.6351 27.191C26.9663 27.1655 27.2757 27.0159 27.5013 26.7722C27.727 26.5285 27.8524 26.2085 27.8524 25.8764V8.70303C27.8524 8.49699 27.8015 8.29416 27.7043 8.11251C27.6071 7.93086 27.4665 7.77601 27.2951 7.66169L21.7138 3.94036ZM20.3044 5.88703C20.3381 5.88486 20.3715 5.89427 20.3991 5.91369L24.0604 8.35369L10.4511 9.44169L7.9711 6.96169L20.3044 5.88703ZM25.4818 24.903L11.1858 26.003V11.7604L25.4818 10.6164V24.903ZM6.52044 8.86169L8.81644 11.1577V24.667L6.54977 21.6444C6.53082 21.6189 6.52053 21.5881 6.52044 21.5564V8.86169ZM15.9738 13.4977L13.3378 13.671V23.7537L15.9991 23.5804V17.7977L20.6818 23.3564L23.3164 23.183V13.1004L20.6551 13.2737V19.0564L15.9738 13.4977Z" fill="#DDFE07"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_275_669">
+                    <rect width="32" height="32" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.behance.net/lumenhuk"
+              target="_blank"
+              class="flex size-14 items-center justify-center rounded-full bg-yellow-120 outline-none duration-300 ease-in-out hover:bg-yellow-100 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:bg-yellow-80"
+            >
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.92367 7.13379C10.7757 7.13379 11.5637 7.20046 12.2837 7.39779C13.005 7.52979 13.5957 7.79379 14.1197 8.12312C14.645 8.45246 15.0383 8.91512 15.2997 9.50846C15.5623 10.1018 15.6943 10.8285 15.6943 11.6191C15.6943 12.5431 15.497 13.3338 15.0383 13.9271C14.645 14.5218 13.989 15.0485 13.2023 15.4445C14.317 15.7751 15.169 16.3685 15.6943 17.1591C16.2183 17.9511 16.5463 18.9405 16.5463 20.0618C16.5463 20.9858 16.349 21.7765 16.021 22.4365C15.6943 23.0965 15.169 23.6898 14.5783 24.0858C13.9367 24.5103 13.2275 24.8223 12.481 25.0085C11.6943 25.2071 10.9077 25.3391 10.121 25.3391H1.33301V7.13379H9.92367ZM9.39834 14.5205C10.1197 14.5205 10.7103 14.3231 11.169 13.9938C11.6277 13.6645 11.825 13.0698 11.825 12.3445C11.825 11.9485 11.7583 11.5525 11.6277 11.2898C11.497 11.0258 11.2997 10.8271 11.0383 10.6298C10.771 10.48 10.4837 10.3691 10.185 10.3005C9.85701 10.2338 9.53034 10.2338 9.13567 10.2338H5.33301V14.5218L9.39834 14.5205ZM9.59567 22.3045C9.98901 22.3045 10.3823 22.2378 10.7103 22.1725C11.0383 22.1058 11.3663 21.9751 11.6277 21.7765C11.8949 21.5834 12.1184 21.3363 12.2837 21.0511C12.4143 20.7218 12.5463 20.3258 12.5463 19.8645C12.5463 18.9405 12.2837 18.2805 11.7597 17.8191C11.2343 17.4231 10.513 17.2258 9.66101 17.2258H5.33301V22.3058L9.59567 22.3045ZM22.2517 22.2378C22.7757 22.7658 23.5623 23.0298 24.6117 23.0298C25.333 23.0298 25.989 22.8325 26.513 22.5031C27.0383 22.1071 27.3663 21.7111 27.497 21.3151H30.7103C30.185 22.8978 29.3983 24.0191 28.3503 24.7445C27.2997 25.4045 26.0543 25.8005 24.5463 25.8005C23.5815 25.8034 22.6248 25.6243 21.7263 25.2725C20.9179 24.9693 20.197 24.4709 19.6277 23.8218C19.0187 23.2146 18.5686 22.4668 18.317 21.6445C17.989 20.7871 17.857 19.8645 17.857 18.8085C17.857 17.8191 17.989 16.8965 18.317 16.0378C18.6328 15.2111 19.0999 14.4506 19.6943 13.7951C20.2837 13.2018 21.005 12.6751 21.7917 12.3445C22.6673 11.9925 23.6027 11.8132 24.5463 11.8165C25.661 11.8165 26.645 12.0151 27.497 12.4765C28.3503 12.9378 29.005 13.4658 29.529 14.2578C30.0543 14.9831 30.449 15.8405 30.7103 16.7645C30.841 17.6871 30.9063 18.6111 30.841 19.6658H21.333C21.333 20.7218 21.7263 21.7111 22.2517 22.2391M26.3823 15.3138C25.9237 14.8525 25.2023 14.5885 24.349 14.5885C23.8487 14.581 23.3539 14.6939 22.9063 14.9178C22.513 15.1165 22.2517 15.3805 21.989 15.6445C21.7476 15.8995 21.5879 16.2207 21.5303 16.5671C21.4637 16.8978 21.3983 17.1605 21.3983 17.4245H27.2997C27.169 16.4351 26.841 15.7765 26.3823 15.3138ZM20.6117 8.38712H27.9557V10.1685H20.613L20.6117 8.38712Z" fill="#DDFE07"/>
+                </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://dribbble.com/lumenhuk"
+              target="_blank"
+              class="flex size-14 items-center justify-center rounded-full bg-yellow-120 outline-none duration-300 ease-in-out hover:bg-yellow-100 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:bg-yellow-80"
+            >
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.3337 16.0003C29.3359 17.7565 28.9901 19.4958 28.3163 21.1176C27.6424 22.7394 26.6538 24.2115 25.4077 25.449C24.1717 26.6828 22.7047 27.6609 21.0906 28.3275C19.4764 28.994 17.7467 29.3359 16.0003 29.3337C8.63634 29.3337 2.667 23.3643 2.667 16.0003C2.66234 12.5815 3.97558 9.29244 6.33367 6.817C7.5779 5.50407 9.07695 4.45883 10.7391 3.74526C12.4012 3.03168 14.1915 2.66478 16.0003 2.667C17.7467 2.66474 19.4764 3.00666 21.0906 3.67321C22.7047 4.33976 24.1717 5.31789 25.4077 6.55167C26.6538 7.78915 27.6424 9.26132 28.3163 10.8831C28.9901 12.5049 29.3359 14.2441 29.3337 16.0003Z" stroke="#DDFE07" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M29.3332 16.0004C27.3879 16.0004 22.0212 15.267 17.2179 17.3757C11.9999 19.667 8.22186 23.2217 6.5752 25.4317" stroke="#DDFE07" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 3.63672C13.0867 5.56272 17.64 10.4661 19.3333 15.3341C21.0267 20.2021 21.6533 26.1874 22.04 27.8907" stroke="#DDFE07" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.76953 14.3335C5.2882 14.4855 11.9555 14.6221 16.2222 12.8001C20.4889 10.9781 24.1602 7.62681 25.4195 6.56348M3.66686 21.0755C4.84174 23.9194 6.96067 26.2716 9.66687 27.7361" stroke="#DDFE07" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2.667 16.0003C2.66234 12.5815 3.97558 9.29244 6.33367 6.817C7.5779 5.50407 9.07695 4.45883 10.7391 3.74526C12.4012 3.03168 14.1915 2.66478 16.0003 2.667M21.3337 3.77634C22.8521 4.44069 24.2336 5.38183 25.4077 6.55167C26.6538 7.78915 27.6424 9.26132 28.3163 10.8831C28.9901 12.5049 29.3359 14.2441 29.3337 16.0003C29.3337 17.6417 29.037 19.2143 28.4937 20.667M16.0003 29.3337C17.7467 29.3359 19.4764 28.994 21.0906 28.3275C22.7047 27.6609 24.1717 26.6828 25.4077 25.449" stroke="#DDFE07" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr class="w-full max-w-[564px] self-center border-black-40" />
+      <div data-animated="fade-up">
+        <svg
+          width="100%"
+          height="auto"
+          viewBox="0 0 1711 290"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 286.036V0H42.8775V286.036H0Z" fill="#252425" />
+          <path
+            d="M265.999 77.5051V286.036H224.908V250.752H223.916C212.402 275.728 191.162 289.802 159.202 289.802C113.744 289.802 85.9535 260.267 85.9535 212.495V77.5051H128.831V204.17C128.831 235.885 143.917 252.932 173.495 252.932C204.462 252.932 223.122 231.524 223.122 199.016V77.5051H265.999Z"
+            fill="#252425"
+          />
+          <path
+            d="M308.48 286.036V77.5051H349.372V112.591H350.365C359.694 89.3985 381.53 73.9371 409.718 73.9371C438.7 73.9371 459.742 88.8038 468.079 114.771H469.072C479.791 89.3985 504.406 73.9371 534.182 73.9371C575.471 73.9371 602.468 101.292 602.468 142.72V286.036H559.392V153.028C559.392 126.07 544.901 110.608 519.492 110.608C494.084 110.608 476.416 129.439 476.416 155.803V286.036H434.333V149.856C434.333 125.871 419.048 110.608 394.83 110.608C369.421 110.608 351.357 130.431 351.357 157.191V286.036H308.48Z"
+            fill="#252425"
+          />
+          <path
+            d="M731.299 108.23C701.325 108.23 680.283 131.025 678.099 162.543H782.514C781.522 130.629 761.274 108.23 731.299 108.23ZM782.316 224.785H823.009C817.054 262.843 780.926 290 733.086 290C671.747 290 634.626 248.571 634.626 182.761C634.626 117.348 672.343 73.7389 731.299 73.7389C789.263 73.7389 825.392 114.573 825.392 177.806V192.474H677.901V195.051C677.901 231.326 699.737 255.311 734.078 255.311C758.495 255.311 776.559 243.021 782.316 224.785Z"
+            fill="#252425"
+          />
+          <path
+            d="M858.741 286.036V77.5051H899.633V112.392H900.626C911.941 88.6056 934.173 73.9371 966.331 73.9371C1012.39 73.9371 1038.79 103.274 1038.79 151.046V286.036H995.71V159.371C995.71 128.052 981.021 110.807 951.245 110.807C921.072 110.807 901.618 132.215 901.618 164.525V286.036H858.741Z"
+            fill="#252425"
+          />
+          <path
+            d="M1081.86 286.036V0H1124.34V112.392H1125.34C1136.85 88.0109 1159.68 73.9371 1191.44 73.9371C1237.29 73.9371 1264.69 104.463 1264.69 151.64V286.036H1221.61V159.966C1221.61 129.241 1206.13 110.807 1175.95 110.807C1144.19 110.807 1124.74 132.611 1124.74 165.516V286.036H1081.86Z"
+            fill="#252425"
+          />
+          <path
+            d="M1485.23 77.5051V286.036H1444.14V250.752H1443.14C1431.63 275.728 1410.39 289.802 1378.43 289.802C1332.97 289.802 1305.18 260.267 1305.18 212.495V77.5051H1348.06V204.17C1348.06 235.885 1363.15 252.932 1392.72 252.932C1423.69 252.932 1442.35 231.524 1442.35 199.016V77.5051H1485.23Z"
+            fill="#252425"
+          />
+          <path
+            d="M1572.57 166.904L1656.94 77.5051H1707.36L1620.81 167.3L1710.73 286.036H1660.91L1590.04 193.465L1572.17 211.107V286.036H1529.3V0H1572.17V166.904H1572.57Z"
+            fill="#252425"
+          />
+        </svg>
+      </div>
+    </footer>
+    <!--    Navigation Overlay    -->
+    <div
+      role="presentation"
+      aria-hidden="true"
+      class="animate-[cubic-bezier(0, 0, 0.2, 1)] fixed inset-0 z-10 flex -translate-x-full flex-col bg-yellow-40 px-4 py-4 text-black-100 transition-transform duration-200 tabletV:px-8 tabletV:py-5 tabletH:px-12 tabletH:py-6"
+      data-navigation-menu="overlay"
+    >
+      <div class="absolute bottom-0 right-0 -z-10">
+        <svg
+          width="120"
+          height="705"
+          viewBox="0 0 120 705"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="vertical-logo"
+        >
+          <path d="M117.747 705H0L0 687.349H117.747V705Z" fill="#C9E41A" />
+          <path
+            d="M31.905 595.501H117.747V612.416H103.222V612.825C113.504 617.564 119.297 626.308 119.297 639.464C119.297 658.177 107.139 669.617 87.4737 669.617H31.905V651.967H84.0465C97.1023 651.967 104.12 645.756 104.12 633.581C104.12 620.833 95.3071 613.152 81.925 613.152H31.905V595.501Z"
+            fill="#C9E41A"
+          />
+          <path
+            d="M117.747 578.014H31.905V561.181H46.348V560.772C36.801 556.932 30.4363 547.943 30.4363 536.339C30.4363 524.409 36.5562 515.747 47.2456 512.315V511.906C36.801 507.494 30.4363 497.361 30.4363 485.104C30.4363 468.107 41.6969 456.993 58.751 456.993H117.747V474.726H62.9941C51.8967 474.726 45.532 480.691 45.532 491.151C45.532 501.61 53.2839 508.883 64.1365 508.883H117.747V526.206H61.6885C51.8151 526.206 45.532 532.499 45.532 542.468C45.532 552.927 53.6919 560.364 64.7077 560.364H117.747V578.014Z"
+            fill="#C9E41A"
+          />
+          <path
+            d="M44.5528 403.96C44.5528 416.299 53.9367 424.961 66.9108 425.86V382.878C53.7735 383.286 44.5528 391.621 44.5528 403.96ZM92.5328 382.959V366.208C108.2 368.659 119.379 383.531 119.379 403.225C119.379 428.475 102.325 443.756 75.2339 443.756C48.3064 443.756 30.3547 428.23 30.3547 403.96C30.3547 380.099 47.164 365.227 73.1939 365.227H79.2322V425.942H80.293C95.2255 425.942 105.099 416.953 105.099 402.816C105.099 392.765 100.04 385.329 92.5328 382.959Z"
+            fill="#C9E41A"
+          />
+          <path
+            d="M117.747 351.499H31.905V334.665H46.2664V334.257C36.4746 329.599 30.4363 320.447 30.4363 307.209C30.4363 288.251 42.5129 277.383 62.1781 277.383H117.747V295.115H65.6053C52.7127 295.115 45.6136 301.162 45.6136 313.419C45.6136 325.84 54.4263 333.848 67.7268 333.848H117.747V351.499Z"
+            fill="#C9E41A"
+          />
+          <path
+            d="M117.747 259.651H0L0 242.163H46.2664V241.755C36.2298 237.015 30.4363 227.618 30.4363 214.544C30.4363 195.667 43.0024 184.391 62.4229 184.391H117.747V202.123H65.8501C53.2023 202.123 45.6136 208.497 45.6136 220.917C45.6136 233.992 54.5894 242 68.1348 242H117.747V259.651Z"
+            fill="#C9E41A"
+          />
+          <path
+            d="M31.905 93.6047H117.747V110.52H103.222V110.928C113.504 115.668 119.297 124.411 119.297 137.568C119.297 156.28 107.139 167.721 87.4737 167.721H31.905L31.905 150.07H84.0465C97.1023 150.07 104.12 143.86 104.12 131.684C104.12 118.936 95.3071 111.255 81.925 111.255H31.905L31.905 93.6047Z"
+            fill="#C9E41A"
+          />
+          <path
+            d="M68.706 57.6498L31.905 22.9208V2.16504L68.8692 37.793L117.747 0.775818V21.2864L79.6402 50.4589L86.9025 57.8133H117.747V75.4638H0L0 57.8133H68.706V57.6498Z"
+            fill="#C9E41A"
+          />
+        </svg>
+      </div>
+      <div
+        class="flex items-center justify-between px-4 py-3 tabletV:h-16 tabletV:px-6 tabletH:px-8"
+      >
+        <svg
+          width="45"
+          height="16"
+          viewBox="0 0 45 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 14.9922V0.900391H2.10938V14.9922H0Z" fill="black" />
+          <path
+            d="M4.27734 14.9922V4.71875H6.28906V6.44727H6.33789C6.79688 5.30469 7.87109 4.54297 9.25781 4.54297C10.6836 4.54297 11.7188 5.27539 12.1289 6.55469H12.1777C12.7051 5.30469 13.916 4.54297 15.3809 4.54297C17.4121 4.54297 18.7402 5.89062 18.7402 7.93164V14.9922H16.6211V8.43945C16.6211 7.11133 15.9082 6.34961 14.6582 6.34961C13.4082 6.34961 12.5391 7.27734 12.5391 8.57617V14.9922H10.4688V8.2832C10.4688 7.10156 9.7168 6.34961 8.52539 6.34961C7.27539 6.34961 6.38672 7.32617 6.38672 8.64453V14.9922H4.27734Z"
+            fill="black"
+          />
+          <path
+            d="M20.8594 14.9922V0.900391H22.9492V6.4375H22.998C23.5645 5.23633 24.6875 4.54297 26.25 4.54297C28.5059 4.54297 29.8535 6.04688 29.8535 8.37109V14.9922H27.7344V8.78125C27.7344 7.26758 26.9727 6.35938 25.4883 6.35938C23.9258 6.35938 22.9688 7.43359 22.9688 9.05469V14.9922H20.8594Z"
+            fill="black"
+          />
+          <path
+            d="M34.1016 9.12305L38.252 4.71875H40.7324L36.4746 9.14258L40.8984 14.9922H38.4473L34.9609 10.4316L34.082 11.3008V14.9922H31.9727V0.900391H34.082V9.12305H34.1016Z"
+            fill="black"
+          />
+          <path
+            d="M43.5742 15.0996C42.8613 15.0996 42.2949 14.5332 42.2949 13.8203C42.2949 13.1074 42.8613 12.541 43.5742 12.541C44.2871 12.541 44.8535 13.1074 44.8535 13.8203C44.8535 14.5332 44.2871 15.0996 43.5742 15.0996Z"
+            fill="black"
+          />
+        </svg>
+        <button data-navigation-menu="close">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.9461 6.06342L17.9464 6.06378C18.1312 6.24851 18.1312 6.57193 17.9464 6.75667L13.0564 11.6467L12.7029 12.0002L13.0564 12.3538L17.9464 17.2438C17.9926 17.2899 18.0292 17.3447 18.0542 17.405C18.0791 17.4653 18.092 17.53 18.092 17.5952C18.092 17.6605 18.0791 17.7251 18.0542 17.7854C18.0292 17.8457 17.9926 17.9005 17.9464 17.9467C17.9003 17.9928 17.8455 18.0294 17.7852 18.0544C17.7249 18.0794 17.6602 18.0922 17.595 18.0922C17.5297 18.0922 17.4651 18.0794 17.4048 18.0544C17.3445 18.0294 17.2897 17.9928 17.2435 17.9467L12.3535 13.0567L12 12.7031L11.6464 13.0567L6.75643 17.9467C6.71027 17.9928 6.65548 18.0294 6.59518 18.0544C6.53488 18.0794 6.47025 18.0922 6.40498 18.0922C6.33971 18.0922 6.27508 18.0794 6.21478 18.0544C6.15448 18.0294 6.09969 17.9928 6.05353 17.9467C6.00738 17.9005 5.97077 17.8457 5.94579 17.7854C5.92081 17.7251 5.90796 17.6605 5.90796 17.5952C5.90796 17.53 5.92081 17.4653 5.94579 17.405C5.97077 17.3447 6.00738 17.2899 6.05353 17.2438L10.9435 12.3538L11.2971 12.0002L10.9435 11.6467L6.05353 6.75667C6.00738 6.71052 5.97077 6.65573 5.94579 6.59543C5.92081 6.53512 5.90796 6.47049 5.90796 6.40522C5.90796 6.33995 5.92081 6.27532 5.94579 6.21502C5.97077 6.15472 6.00738 6.09993 6.05353 6.05378C6.09969 6.00762 6.15448 5.97101 6.21478 5.94604C6.27508 5.92106 6.33971 5.9082 6.40498 5.9082C6.47025 5.9082 6.53488 5.92106 6.59518 5.94604C6.65548 5.97101 6.71027 6.00762 6.75643 6.05378L11.6464 10.9438L11.9996 11.297L12.3532 10.9441L17.2432 6.06414L17.2439 6.06342C17.29 6.01725 17.3447 5.98062 17.4049 5.95563C17.4652 5.93064 17.5298 5.91778 17.595 5.91778C17.6602 5.91778 17.7248 5.93064 17.785 5.95563C17.8453 5.98062 17.9 6.01725 17.9461 6.06342Z"
+              fill="#0D0B0D"
+              stroke="#0D0B0D"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="mt-9 flex max-w-[420px] flex-grow flex-col justify-between px-4 tabletV:px-6 tabletH:px-8"
+      >
+        <nav>
+          <ul class="-ml-4 flex flex-col gap-6 text-lg">
+            <li>
+              <a
+                href="#home"
+                class="text-nowrap rounded-[24px] px-4 py-2 text-center text-lg outline-none focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60"
+                data-link="home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about-me"
+                class="text-nowrap rounded-[24px] px-4 py-2 text-center text-lg outline-none focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60"
+                data-link="about-me"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-nowrap rounded-[24px] px-4 py-2 text-center text-lg outline-none focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60"
+                data-link="services"
+                >My Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="text-nowrap rounded-[24px] px-4 py-2 text-center text-lg outline-none focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60"
+                data-link="portfolio"
+                >Portfolio</a
+              >
+            </li>
+          </ul>
+          <ul class="mt-9 flex gap-5">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lumenhuk/"
+                target="_blank"
+                class="flex size-14 items-center justify-center rounded-full bg-yellow-80 outline-none duration-300 ease-in-out hover:opacity-90 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:opacity-80"
+              >
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.25338 6.66654C9.25302 7.37378 8.97173 8.05192 8.47139 8.55176C7.97104 9.05161 7.29262 9.33222 6.58538 9.33187C5.87813 9.33152 5.2 9.05022 4.70015 8.54988C4.2003 8.04953 3.91969 7.37111 3.92004 6.66387C3.9204 5.95662 4.20169 5.27849 4.70204 4.77864C5.20238 4.27879 5.8808 3.99818 6.58804 3.99854C7.29529 3.99889 7.97342 4.28018 8.47327 4.78053C8.97312 5.28087 9.25373 5.95929 9.25338 6.66654ZM9.33338 11.3065H4.00004V27.9999H9.33338V11.3065ZM17.76 11.3065H12.4534V27.9999H17.7067V19.2399C17.7067 14.3599 24.0667 13.9065 24.0667 19.2399V27.9999H29.3334V17.4265C29.3334 9.19987 19.92 9.50654 17.7067 13.5465L17.76 11.3065Z"
+                    fill="#363C0B"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://outgoing-comic-0c7.notion.site/Hello-World-12fff7d67c764672a6fc539efbc38459?pvs=74"
+                target="_blank"
+                class="flex size-14 items-center justify-center rounded-full bg-yellow-80 outline-none duration-300 ease-in-out hover:opacity-90 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:opacity-80"
+              >
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.7135 3.93987C21.2378 3.62284 20.6684 3.47708 20.0989 3.52654L5.35219 4.80787C5.02339 4.83657 4.7173 4.98753 4.49439 5.23093C4.27148 5.47434 4.14794 5.79248 4.14819 6.12254V21.5559C4.14819 22.0999 4.32553 22.6305 4.65219 23.0665L8.34153 27.9865C8.47481 28.1637 8.65058 28.3045 8.85262 28.3959C9.05466 28.4872 9.27645 28.5262 9.49753 28.5092L26.6349 27.1905C26.9661 27.165 27.2754 27.0154 27.5011 26.7717C27.7268 26.528 27.8522 26.208 27.8522 25.8759V8.70254C27.8521 8.49651 27.8013 8.29367 27.704 8.11202C27.6068 7.93037 27.4663 7.77552 27.2949 7.6612L21.7135 3.93987ZM20.3042 5.88654C20.3379 5.88437 20.3713 5.89378 20.3989 5.9132L24.0602 8.3532L10.4509 9.4412L7.97086 6.9612L20.3042 5.88654ZM25.4815 24.9025L11.1855 26.0025V11.7599L25.4815 10.6159V24.9025ZM6.52019 8.8612L8.81619 11.1572V24.6665L6.54953 21.6439C6.53057 21.6184 6.52029 21.5876 6.52019 21.5559V8.8612ZM15.9735 13.4972L13.3375 13.6705V23.7532L15.9989 23.5799V17.7972L20.6815 23.3559L23.3162 23.1825V13.0999L20.6549 13.2732V19.0559L15.9735 13.4972Z"
+                    fill="#363C0B"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/lumenhuk"
+                target="_blank"
+                class="flex size-14 items-center justify-center rounded-full bg-yellow-80 outline-none duration-300 ease-in-out hover:opacity-90 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:opacity-80"
+              >
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.9238 7.1333C10.7758 7.1333 11.5638 7.19997 12.2838 7.3973C13.0051 7.5293 13.5958 7.7933 14.1198 8.12263C14.6451 8.45197 15.0385 8.91463 15.2998 9.50797C15.5625 10.1013 15.6945 10.828 15.6945 11.6186C15.6945 12.5426 15.4971 13.3333 15.0385 13.9266C14.6451 14.5213 13.9891 15.048 13.2025 15.444C14.3171 15.7746 15.1691 16.368 15.6945 17.1586C16.2185 17.9506 16.5465 18.94 16.5465 20.0613C16.5465 20.9853 16.3491 21.776 16.0211 22.436C15.6945 23.096 15.1691 23.6893 14.5785 24.0853C13.9368 24.5098 13.2276 24.8218 12.4811 25.008C11.6945 25.2066 10.9078 25.3386 10.1211 25.3386H1.33313V7.1333H9.9238ZM9.39846 14.52C10.1198 14.52 10.7105 14.3226 11.1691 13.9933C11.6278 13.664 11.8251 13.0693 11.8251 12.344C11.8251 11.948 11.7585 11.552 11.6278 11.2893C11.4971 11.0253 11.2998 10.8266 11.0385 10.6293C10.7711 10.4795 10.4838 10.3686 10.1851 10.3C9.85713 10.2333 9.53046 10.2333 9.1358 10.2333H5.33313V14.5213L9.39846 14.52ZM9.5958 22.304C9.98913 22.304 10.3825 22.2373 10.7105 22.172C11.0385 22.1053 11.3665 21.9746 11.6278 21.776C11.895 21.5829 12.1185 21.3358 12.2838 21.0506C12.4145 20.7213 12.5465 20.3253 12.5465 19.864C12.5465 18.94 12.2838 18.28 11.7598 17.8186C11.2345 17.4226 10.5131 17.2253 9.66113 17.2253H5.33313V22.3053L9.5958 22.304ZM22.2518 22.2373C22.7758 22.7653 23.5625 23.0293 24.6118 23.0293C25.3331 23.0293 25.9891 22.832 26.5131 22.5026C27.0385 22.1066 27.3665 21.7106 27.4971 21.3146H30.7105C30.1851 22.8973 29.3985 24.0186 28.3505 24.744C27.2998 25.404 26.0545 25.8 24.5465 25.8C23.5816 25.803 22.6249 25.6238 21.7265 25.272C20.918 24.9688 20.1971 24.4705 19.6278 23.8213C19.0189 23.2141 18.5687 22.4663 18.3171 21.644C17.9891 20.7866 17.8571 19.864 17.8571 18.808C17.8571 17.8186 17.9891 16.896 18.3171 16.0373C18.6329 15.2107 19.1 14.4501 19.6945 13.7946C20.2838 13.2013 21.0051 12.6746 21.7918 12.344C22.6674 11.9921 23.6028 11.8128 24.5465 11.816C25.6611 11.816 26.6451 12.0146 27.4971 12.476C28.3505 12.9373 29.0051 13.4653 29.5291 14.2573C30.0545 14.9826 30.4491 15.84 30.7105 16.764C30.8411 17.6866 30.9065 18.6106 30.8411 19.6653H21.3331C21.3331 20.7213 21.7265 21.7106 22.2518 22.2386M26.3825 15.3133C25.9238 14.852 25.2025 14.588 24.3491 14.588C23.8488 14.5805 23.354 14.6934 22.9065 14.9173C22.5131 15.116 22.2518 15.38 21.9891 15.644C21.7478 15.899 21.588 16.2203 21.5305 16.5666C21.4638 16.8973 21.3985 17.16 21.3985 17.424H27.2998C27.1691 16.4346 26.8411 15.776 26.3825 15.3133ZM20.6118 8.38663H27.9558V10.168H20.6131L20.6118 8.38663Z"
+                    fill="#363C0B"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://dribbble.com/lumenhuk"
+                target="_blank"
+                class="flex size-14 items-center justify-center rounded-full bg-yellow-80 outline-none duration-300 ease-in-out hover:opacity-90 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:opacity-80"
+              >
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.3333 15.9998C29.3356 17.7561 28.9898 19.4953 28.3159 21.1171C27.642 22.7389 26.6535 24.211 25.4073 25.4485C24.1713 26.6823 22.7044 27.6604 21.0902 28.327C19.476 28.9935 17.7463 29.3354 16 29.3332C8.63597 29.3332 2.66664 23.3638 2.66664 15.9998C2.66198 12.581 3.97522 9.29195 6.3333 6.81651C7.57753 5.50358 9.07658 4.45834 10.7387 3.74477C12.4009 3.0312 14.1911 2.66429 16 2.66652C17.7463 2.66425 19.476 3.00617 21.0902 3.67272C22.7044 4.33928 24.1713 5.3174 25.4073 6.55118C26.6535 7.78867 27.642 9.26083 28.3159 10.8826C28.9898 12.5044 29.3356 14.2436 29.3333 15.9998Z"
+                    fill="#B6CE19"
+                    stroke="#363C0B"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M29.3333 15.9999C27.388 15.9999 22.0213 15.2665 17.218 17.3752C12 19.6665 8.22198 23.2212 6.57532 25.4312"
+                    stroke="#363C0B"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11 3.63574C13.0867 5.56174 17.64 10.4651 19.3333 15.3331C21.0267 20.2011 21.6533 26.1864 22.04 27.8897"
+                    stroke="#363C0B"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2.76929 14.333C5.28795 14.485 11.9553 14.6217 16.222 12.7997C20.4886 10.9777 24.16 7.62632 25.4193 6.56299M3.66662 21.075C4.8415 23.9189 6.96042 26.2712 9.66662 27.7357"
+                    stroke="#363C0B"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2.66664 15.9998C2.66198 12.581 3.97522 9.29195 6.3333 6.81651C7.57753 5.50358 9.07658 4.45834 10.7387 3.74477C12.4009 3.03119 14.1911 2.66429 16 2.66651M21.3333 3.77585C22.8517 4.44021 24.2332 5.38134 25.4073 6.55118C26.6535 7.78866 27.642 9.26083 28.3159 10.8826C28.9898 12.5044 29.3356 14.2436 29.3333 15.9998C29.3333 17.6412 29.0366 19.2138 28.4933 20.6665M16 29.3332C17.7463 29.3354 19.476 28.9935 21.0902 28.327C22.7044 27.6604 24.1713 26.6823 25.4073 25.4485"
+                    stroke="#363C0B"
+                    stroke-width="2.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="w-full rounded-[24px] bg-black-100 px-6 py-3 font-medium leading-5 text-white-100 outline-none duration-300 ease-in-out hover:opacity-90 focus-visible:ring-2 focus-visible:ring-[#A555A8FF] focus-visible:ring-offset-4 focus-visible:ring-offset-black-60 active:opacity-80"
+          data-link="contact-form"
+        >
+          Contact Me!
+        </button>
+      </div>
+    </div>
+    <script defer>
+      initAnimations();
+      initNavigation();
+      initNavigationMenu();
+      initForm();
+
+      function initAnimations() {
+        const ANIMATION_DURATION_MS = 350;
+        const animationQueue = [];
+
+        // Step 1: Select all elements to observe
+        const elementsToAnimate = document.querySelectorAll(
+          "[data-animated='fade-up']",
+        );
+
+        elementsToAnimate.forEach((element) => {
+          element.classList.add("opacity-0");
+        });
+
+        // Step 2: Create the Intersection Observer
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              // Check if the element is in view
+              if (entry.isIntersecting) {
+                animationQueue.push(entry.target);
+                // Optional: Unobserve the element after animation is applied
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            root: null, // observing with respect to the viewport
+            rootMargin: "0px",
+            threshold: 0.3, // trigger if at least 30% of the element is in view
+          },
+        );
+
+        // Step 3: Observe each element
+        elementsToAnimate.forEach((element) => {
+          observer.observe(element);
+        });
+
+        setInterval(() => {
+          if (animationQueue.length > 0) {
+            const element = animationQueue.shift();
+            element.classList.add(
+              "animate-fade-up",
+              `animate-duration-[${ANIMATION_DURATION_MS}ms]`,
+            );
+          }
+        }, ANIMATION_DURATION_MS * 0.5);
+      }
+
+      function initNavigation() {
+        const links = document.querySelectorAll("[data-link]");
+
+        setActiveLink();
+        window.addEventListener("scroll", debounce(setActiveLink, 150));
+
+        links.forEach((element) => {
+          element.addEventListener("click", (event) => {
+            event.preventDefault();
+            const anchor = element.dataset.link;
+            if (!anchor) return;
+            const anchorElement = document.querySelector(
+              `[data-anchor="${anchor}"]`,
+            );
+            const anchorElementRect = anchorElement.getBoundingClientRect();
+            const headerElement = document.querySelector("header");
+            const headerRect = headerElement.getBoundingClientRect().height;
+            const targetScrollY =
+              anchorElementRect.y + window.scrollY + -headerRect;
+            window.scrollTo({ top: targetScrollY, behavior: "smooth" });
+          });
+        });
+
+        function debounce(func, wait) {
+          let timeoutId = null;
+
+          return (...args) => {
+            if (timeoutId) {
+              clearTimeout(timeoutId);
+            }
+
+            timeoutId = setTimeout(() => func(...args), wait);
+          };
+        }
+
+        function setActiveLink() {
+          const links = document.querySelectorAll("[data-anchor-state]");
+          const activeAnchor = findActiveAnchor();
+
+          const activeClass = "text-yellow-40";
+
+          links.forEach((element) => {
+            if (activeAnchor && element.dataset.link === activeAnchor) {
+              element.classList.add(activeClass);
+            } else {
+              element.classList.remove(activeClass);
+            }
+          });
+        }
+
+        function findActiveAnchor() {
+          const anchors = document.querySelectorAll("[data-anchor]");
+
+          const OFFSET = window.innerHeight * 0.4;
+          let activeAnchor = null;
+          let leastNegative = null;
+
+          anchors.forEach((element) => {
+            const clientRect = element.getBoundingClientRect();
+
+            if (leastNegative === null) {
+              leastNegative = clientRect.y;
+              activeAnchor = element;
+            } else if (
+              clientRect.y - OFFSET <= 0 &&
+              clientRect.y >= leastNegative
+            ) {
+              leastNegative = clientRect.y;
+              activeAnchor = element;
+            }
+          });
+
+          const activeAnchorRect = activeAnchor.getBoundingClientRect();
+
+          if (activeAnchorRect.y + activeAnchorRect.height - OFFSET <= 0) {
+            activeAnchor = null;
+          }
+
+          return activeAnchor?.dataset.anchor;
+        }
+      }
+
+      function initNavigationMenu() {
+        const navigationMenu = document.querySelector(
+          "[data-navigation-menu='overlay']",
+        );
+        const openButton = document.querySelector(
+          "[data-navigation-menu='open']",
+        );
+        const closeButtons = navigationMenu.querySelectorAll("button, a");
+        const hiddenClass = "-translate-x-full";
+        const visibleClass = "translate-x-0";
+
+        openButton.addEventListener("click", () => {
+          navigationMenu.classList.replace(hiddenClass, visibleClass);
+          navigationMenu.ariaHidden = "false";
+          document.body.style.overflow = "hidden";
+        });
+
+        closeButtons.forEach((closeButton) => {
+          closeButton.addEventListener("click", () => {
+            navigationMenu.classList.replace(visibleClass, hiddenClass);
+            navigationMenu.ariaHidden = "true";
+            document.body.style.overflow = null;
+          });
+        });
+      }
+
+      function initForm() {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+
+          const formData = new FormData(form);
+
+          const { fullName, email, message } = Object.fromEntries(
+            formData.entries(),
+          );
+
+          const submitButton = form.querySelector("button[type='submit']");
+          const initialTextContent = submitButton.textContent;
+          submitButton.textContent = "Loading...";
+          submitButton.disabled = true;
+
+          try {
+            await sendTelegramMessage(
+              `Full Name: ${fullName}\nEmail: ${email}\nMessage:\n${message}`,
+            );
+            form.reset();
+          } catch (error) {
+            alert(
+              "Form submission failed, try contacting lumenhuk@gmail.com directly",
+            );
+          } finally {
+            submitButton.textContent = initialTextContent;
+            submitButton.disabled = false;
+          }
+        });
+      }
+
+      async function sendTelegramMessage(message) {
+        const TELEGRAM_BOT_TOKEN =
+          "6938208144:AAGOo75S5tKW_tIxJRONUvUgpD4ywLSOQ9w";
+        const TELEGRAM_CHAT_ID = "5530321023";
+        const TELEGRAM_API = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+
+        return fetch(TELEGRAM_API, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: TELEGRAM_CHAT_ID,
+            text: message,
+            parse_mode: "HTML",
+          }),
+        });
+      }
+    </script>
+  </body>
+</html>
