@@ -3,110 +3,116 @@
 @tailwind utilities;
 
 * {
-    min-width: 0;
+  min-width: 0;
 }
 
 .emoji-shadow {
-    text-shadow: 0 0 28px rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 28px rgba(255, 255, 255, 0.4);
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('../public/assets/fonts/sf-pro-display_regular.woff2') format('woff2');
-    font-weight: 400; /* Normal weight */
-    font-style: normal;
+  font-family: "SF Pro Display";
+  src: url("../public/assets/fonts/sf-pro-display_regular.woff2")
+    format("woff2");
+  font-weight: 400; /* Normal weight */
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('../public/assets/fonts/sf-pro-display_medium.woff2') format('woff2');
-    font-weight: 500; /* Medium weight */
-    font-style: normal;
+  font-family: "SF Pro Display";
+  src: url("../public/assets/fonts/sf-pro-display_medium.woff2") format("woff2");
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SF Pro Display';
-    src: url('../public/assets/fonts/sf-pro-display_semibold.woff2') format('woff2');
-    font-weight: 600; /* Semibold weight */
-    font-style: normal;
+  font-family: "SF Pro Display";
+  src: url("../public/assets/fonts/sf-pro-display_semibold.woff2")
+    format("woff2");
+  font-weight: 600; /* Semibold weight */
+  font-style: normal;
 }
 
 @layer base {
-    html {
-        font-family: "SF Pro Display", system-ui, sans-serif;
-    }
+  html {
+    font-family: "SF Pro Display", system-ui, sans-serif;
+  }
 }
 
 .with-bg-pos-shift {
-    background-position-x: 20px;
+  background-position-x: 20px;
 }
 
 @media (min-width: 768px) {
-    .with-bg-pos-shift {
-        background-position-x: 48px;
-    }
+  .with-bg-pos-shift {
+    background-position-x: 48px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .with-bg-pos-shift {
-        background-position-x: 64px;
-    }
+  .with-bg-pos-shift {
+    background-position-x: 64px;
+  }
 }
 
 @media (min-width: 1440px) {
-    .with-bg-pos-shift {
-        background-position-x: 96px;
-    }
+  .with-bg-pos-shift {
+    background-position-x: 96px;
+  }
 }
 
 @media (min-width: 1920px) {
-    .with-bg-pos-shift {
-        background-position-x: 128px;
-    }
+  .with-bg-pos-shift {
+    background-position-x: 128px;
+  }
 }
 
 .scrollbar-hide {
-    /* IE and Edge */
-    -ms-overflow-style: none;
+  /* IE and Edge */
+  -ms-overflow-style: none;
 
-    /* Firefox */
-    scrollbar-width: none;
+  /* Firefox */
+  scrollbar-width: none;
 
-    /* Safari and Chrome */
-    &::-webkit-scrollbar {
-     display: none;
-    }
+  /* Safari and Chrome */
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 ::selection {
-    background-color: #833286;
-    /*background-color: #a555a8;*/
+  background-color: #833286;
+  /*background-color: #a555a8;*/
 }
 
-.no-select, button, a, img {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.no-select,
+button,
+a,
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .background-image-overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.5;
-    background: rgba(13, 11, 13, 1);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: rgba(13, 11, 13, 1);
 }
 
-input, textarea {
-    -webkit-tap-highlight-color: transparent;
-    background: none;
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+  background: none;
 }
 
 .vertical-logo {
-    height: 85vh;
-    width: calc(85vh * 0.17);
+  height: 85vh;
+  width: calc(85vh * 0.17);
 }
